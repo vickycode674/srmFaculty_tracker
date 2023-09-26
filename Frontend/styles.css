@@ -1,0 +1,107 @@
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 85px auto;
+    padding: 35px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select,
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.header
+{
+    /* position: fixed; */
+    top:0;
+    left:0;
+    width: 100%;
+    padding:0 10%;
+    background: #06308A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+h1{
+    color: #190f0f;
+}
+
+.h1-header{
+    color: #fff;
+    text-align: center;
+    padding-right: 0 0 0 10px;
+}
+.logo
+{
+position: relative;
+font-size: 35px;
+color:#fff;
+text-decoration:none;
+font-weight:600;
+cursor: default;
+opacity: 0;
+animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+display: inline-block;
+font-size: 25px;
+color:#fff;
+font-weight: 500;
+text-decoration: none;
+margin-left: 35px;
+transition: .3s;
+opacity: 0;
+animation: slideTop .5s ease forwards;
+}
+
+.navbar a:hover{
+    color:#0ef;
+}

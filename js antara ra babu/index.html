@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College Schedule</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <label for="day">Select Day:</label>
+            <select id="day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <!-- Add options for other days of the week -->
+            </select>
+            <br>
+            <label for="period">Enter Period Number:</label>
+            <input type="number" id="period" min="1" max="8">
+            <br>
+            <button onclick="getFacultyDetails()">Get Faculty Details</button>
+        </div>
+        <div id="faculty-details" class="hidden">
+            <h2>Faculty Details</h2>
+            <p><strong>Name:</strong> <span id="faculty-name"></span></p>
+            <p><strong>Faculty Number:</strong> <span id="faculty-number"></span></p>
+            <p><strong>Subject:</strong> <span id="faculty-subject"></span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

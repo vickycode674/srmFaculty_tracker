@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="h1-header"> SRM IST RMP</h1>  
+    </header>
+
+
+    <div class="container">
+        <h1>Faculty Finder</h1>
+        <form id="timetableForm">
+            <label for="day">Select Day:</label>
+            <select id="day" name="day">
+                <option value="Monday">Monday</option>
+                <option value="tuesday">tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+            <br>
+            <label for="period">Select Period:</label>
+            <input type="number" id="period" name="period" min="1" max="8">
+            <br>
+            <center>
+                <button type="submit">View Faculty</button>
+            </center>
+        </form>
+        <div id="facultyData">
+            <!-- Faculty information will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
